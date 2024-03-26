@@ -1,0 +1,58 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+
+    <style>
+        body {
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: medium;
+            background-color: rgb(100, 156, 138);
+        }
+    </style>
+
+    <h1>Formulários</h1>
+</head>
+<body>
+    <form action="dados.php" method="post">
+        Nome do infeliz: <input type="text" name="nome"> <br> <br> 
+        Prontuário dessa disgraça: <input type="text" name="pront"> <br> <br> 
+        Senha: <input size="25" maxlength="4" type="password" name="senha"> <br> <br>
+        <input type="hidden" name="nome" value="valor">
+        <h1>Curso:</h1>
+        <input type="radio" name="curso" value="INFO"> INFO <br> <br>
+        <input type="radio" name="curso" value="MEC"> MEC <br> <br>
+        <input type="radio" name="curso" value="ELO"> ELO <br> <br>
+        <input type="radio" name="curso" value="ain ds hmkkkjkkkkk"> ain ds hmkkkjkkk <br> <br>
+ 
+        <h1>Horário:</h1>
+        <input type="radio" name="turno" value="manha"> Matutino <br> <br>
+        <input type="radio" name="turno" value="tarde"> Vespertino <br> <br>
+        <input type="radio" name="turno" value="noite"> Noturno <br> <br>
+        
+        <h1>Professores:</h1>
+        <select name=profs 4 multiple>
+            <option value="Leandro">Leandro</option>
+            <option value="Mottinha">Mottinha</option>
+            <option value="Solange">Solange</option>
+            <option value="Latorre">the Tower</option>
+        </select>
+        <br> <br>
+
+        <h1>Textin</h1>
+        <textarea name="desabafe" cols="50" rows="10">Fala alguma coisa ae: </textarea>
+        <br> <br>
+        
+        0
+        <input type="range" id="volume" name="volume" min="0" max="100" value="50" step="10">
+        <span>100</span>
+        <br>
+        <label for="volume">Volume</label>
+        
+        <br> <br>
+        <input type="submit" name="Enviar" value="Enviar">
+        <input type="reset" value="Limpar"> <br> <br>
+    </body>
+    </html>
