@@ -1,0 +1,6 @@
+body{
+    background-color: rgba(56, 153, 104, 0.925);
+    background-image:linear-gradient(to right, rgb(12, 85, 12), rgb(103, 110, 97));
+    position:static;
+    text-align: center;
+}
