@@ -1,0 +1,170 @@
+*{
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+}
+
+body{
+    background-color: #bec092;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    justify-content: center;
+    align-items: center;
+    color: #f8fbca;
+}
+
+marquee{
+    background-color: #54582f;
+    
+}
+
+main{
+    display: flex;
+    
+}
+
+.opacity{
+    border: solid;
+    width: 20vh;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #272b00;    
+}
+
+.opacity:hover{
+    opacity: 0.5;
+}
+
+.color{
+    border: solid;
+    width: 20vh;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #272b00;
+}
+
+.color:hover{
+    color: black;
+    background: #54582f;
+}
+
+.gradient{
+    border: solid;
+    width: 20vh;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #272b00;
+}
+
+.gradient:hover{
+    background-image: linear-gradient(to right, #203500, #778c43);
+}
+
+.transformax{
+    border: solid;
+    width: 20vh;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #272b00;
+}
+
+.transformax:hover{
+    transform: scale(3);
+}
+
+.transformin{
+    border: solid;
+    width: 20vh;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #272b00;
+}
+
+.transformin:hover{
+    transform: scale(0.5);
+}
+
+.rotate{
+    border: solid;
+    width: 20vh;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #272b00;
+    transition: 5s;
+}
+
+.rotate:hover{
+    transform: rotatez(-360deg);
+}
+
+.blurry{
+    border: solid;
+    width: 20vh;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #272b00;
+    transition: 1s ease;
+}
+
+.blurry:hover{
+    filter:blur(5px);
+}
+
+.arredonded{
+    border: solid;
+    width: 20vh;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #272b00;
+    transition: 5s ease;
+}
+
+.arredonded:hover{
+    border-radius: 100%;
+}
+
+.border{
+    border: solid;
+    width: 20vh;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #272b00;
+}
+
+.border:hover{
+    box-shadow: inset 0 0 0 10px rgba(173, 180, 163, 0.562);
+}
+
+.formtion{
+    border: solid;
+    width: 20vh;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #272b00;
+    transition: 2s;
+}
+
+.formtion:hover{
+    width: 40vw;
+    height: 40vh;
+    transform: rotatez(180deg);
+}
