@@ -1,7 +1,7 @@
-# AW1-2024
+# AW1-2024 - Conteúdo/anotações
 
-# Conteúdo/anotações de Aplicação Web 1
-# Professor Luk Cho Man
+**Professor Luk Cho Man**
+<br> <br>
 ![image](https://github.com/lessthur/AW1-2024/assets/126773266/ac179b71-5215-4cad-8c3d-095f0b4100aa)
 
 # Linguagens utilizadas:
