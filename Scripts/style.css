@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background-color: #204848;
     color: white;
@@ -10,6 +14,11 @@ h1{
     font-size: 28px;    
     display: flex;
     justify-content: center;
+}
+
+img{
+    width: 350px;
+
 }
 
 p{
@@ -38,6 +47,12 @@ a{
     height: 50px;
     margin: 20px;
     border-radius: 25px ;
+    transition: 1s;
+}
+
+a:hover{
+    transform: scale(1.2);
+    background-color: #408f90;
 }
 
 .welcome-text{
@@ -45,3 +60,10 @@ a{
     align-items: center;
     justify-content: center;
 }
+
+.image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
