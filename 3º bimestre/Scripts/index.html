@@ -21,7 +21,7 @@
         <img src="Img/javascript.png" alt="JavaScript">
     </div>
 
-    <div id="#home" class="welcome-text">
+    <div id="home" class="welcome-text">
         <p>
             Aqui, você vai descobrir como o JavaScript pode transformar a maneira como você cria e interage com a web. Desde conceitos básicos 
             até técnicas avançadas, nosso objetivo é tornar sua jornada de aprendizado emocionante e esclarecedora. Explore nossos tutoriais e dicas, 
@@ -29,42 +29,24 @@
             Estamos aqui para ajudar você a cada passo do caminho!
         </p>
     </div>
-
-
-
-
-
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-
-    <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti minus eveniet aspernatur neque officiis eos consequatur praesentium incidunt molestiae cupiditate ratione, saepe, quasi nulla error at impedit. Voluptatum, facere suscipit.
-    </p>
     
+    <div class="button-alert">
+        <h1>Botão de Alerta</h1>
+        <button type="submit" onclick="alert('Alerta: JavaScript')">Botão Alerta</button>
+    </div>
+        
+    <script>        
+        function showAlert() {
+            alert('Você clicou no botão!');
+        }        
+        
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', function(event) {
+                event.preventDefault(); 
+                document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+
 </body>
 </html>
