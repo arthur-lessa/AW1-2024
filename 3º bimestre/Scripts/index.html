@@ -21,7 +21,7 @@
         <img src="../Img/javascript.png" alt="JavaScript">
     </div>
 
-    <div id="home" class="welcome-text">
+    <div id="#home" class="welcome-text">
         <p>
             Aqui, você vai descobrir como o JavaScript pode transformar a maneira como você cria e interage com a web. Desde conceitos básicos 
             até técnicas avançadas, nosso objetivo é tornar sua jornada de aprendizado emocionante e esclarecedora. Explore nossos tutoriais e dicas, 
@@ -32,14 +32,14 @@
     
     <hr>
 
-    <div id="javascript" class="button-alert">
-        <h1>Botão de Alerta</h1>
-        <button type="submit" onclick="alert('Alerta: JavaScript')">Clique aqui</button>
+    <div id="#javascript" class="button-alert">
+        <h1>Botão de Alerta</h1>        
+        <button type="button" onclick="showAlert()">Clique aqui</button>
     </div>
-        
+            
     <script>        
         function showAlert() {
-            alert('Você clicou no botão!');
+            alert('Botão de Alerta acionado!');
         }        
         
         document.querySelectorAll('nav a').forEach(link => {
@@ -49,6 +49,8 @@
             });
         });
     </script>
+    
+    <hr>
 
 </body>
 </html>
