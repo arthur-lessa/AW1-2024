@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">  
     <title>Introdução a JS</title>
 </head>
 <body>
@@ -17,26 +17,30 @@
 
     <h1>Introdução a JavaScript</h1>
 
-    <div class="image">
+    <div class="image" id="home">
         <img src="../Img/javascript.png" alt="JavaScript">
     </div>
 
-    <div id="#home" class="welcome-text">
+    <div class="welcome-text">
         <p>
-            Aqui, você vai descobrir como o JavaScript pode transformar a maneira como você cria e interage com a web. Desde conceitos básicos 
-            até técnicas avançadas, nosso objetivo é tornar sua jornada de aprendizado emocionante e esclarecedora. Explore nossos tutoriais e dicas, 
-            e veja como você pode usar JavaScript para adicionar funcionalidades incríveis e tornar suas páginas web mais dinâmicas e interativas. 
-            Estamos aqui para ajudar você a cada passo do caminho!
+            Nessa página, você terá acesso a diferentes funcionalidades do JavaScript. Essa página foi utilizada 
+            para treinar as habilidades com a linguagem, e aplicá-las de forma simples no projeto. Espero que goste.
         </p>
     </div>
     
     <hr>
 
-    <div id="#javascript" class="button-alert">
-        <h1>Botão de Alerta</h1>        
-        <button type="button" onclick="showAlert()">Clique aqui</button>
+    <div class="card" id="javascript">
+        <div class="screen-dimensions">
+            <h2>Botões utilizando JavaScript</h2>
+            <p id="dimensions">Clique nos botões para ver suas funcionalidades.</p>
+            <button class="button-dimensions" type="button" onclick="showAlert()">Botão de Alerta</button>
+            <button class="button-dimensions" onclick="showHeightWidth()">Mostrar Dimensões</button>
+            <button class="button-dimensions" onclick="showBrowserInfo()">Informações do Navegador</button>
+            <button class="clean-button" onclick="hideHeightWidth()">Esconder Informações</button>
+        </div>
     </div>
-            
+
     <script>        
         function showAlert() {
             alert('Botão de Alerta acionado!');
@@ -48,6 +52,49 @@
                 document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
             });
         });
+
+        function showHeightWidth() {
+            var dimensions = document.getElementById('dimensions');
+            dimensions.innerHTML = 
+                "Altura da tela: " + window.innerHeight + "px.<br>" +
+                "Largura da tela: " + window.innerWidth + "px.";
+        }
+        
+        function hideHeightWidth() {
+            var dimensions = document.getElementById('dimensions');
+            dimensions.innerHTML = "Clique no botão para ver as dimensões da tela.";
+        }
+
+        function showBrowserInfo() {
+            // Identifica o navegador
+            var userAgent = navigator.userAgent;
+            var browserName;
+
+            if (userAgent.indexOf('Firefox') > -1) {
+                browserName = 'Mozilla Firefox';
+            } else if (userAgent.indexOf('SamsungBrowser') > -1) {
+                browserName = 'Samsung Internet';
+            } else if (userAgent.indexOf('Opera') > -1 || userAgent.indexOf('OPR') > -1) {
+                browserName = 'Opera';
+            } else if (userAgent.indexOf('Trident/') > -1) {
+                browserName = 'Internet Explorer';
+            } else if (userAgent.indexOf('Edge/') > -1) {
+                browserName = 'Microsoft Edge';
+            } else if (userAgent.indexOf('Chrome') > -1) {
+                browserName = 'Google Chrome';
+            } else if (userAgent.indexOf('Safari') > -1) {
+                browserName = 'Apple Safari';
+            } else {
+                browserName = 'Desconhecido';
+            }
+
+            // Obtém o idioma do navegador
+            var navigatorLanguage = navigator.language || navigator.userLanguage;
+
+            // Atualiza o conteúdo do elemento
+            var dimensions = document.getElementById('dimensions');
+            dimensions.innerHTML = "Navegador: " + browserName + "<br>" + "Idioma do navegador: " + navigatorLanguage;
+        }
     </script>
     
     <hr>
