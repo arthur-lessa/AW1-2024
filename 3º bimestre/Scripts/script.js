@@ -90,13 +90,7 @@ function showData() {
     }
 
     var dimensions = document.getElementById('dimensions');
-    if (hora < 10 && minutos < 10) {
-        dimensions.innerHTML = `0${hora}:0${minutos}`;
-    } else if (hora > 10 && minutos < 10){
-        dimensions.innerHTML = `${hora}:0${minutos}`;
-    } else if  (hora > 10 && minutos > 10){
-        dimensions.innerHTML = `${hora}:${minutos}`;
-    }            
+    dimensions.innerHTML = `${mensagem} Agora são ${hora}:${minutos}.`;
 }
 
 function changeColors() {
@@ -172,4 +166,18 @@ function diaDaSemana() {
     }
 
     document.getElementById('dia').innerHTML = `Hoje é ${m}`;
+}
+
+function calculaIdade() {
+    var idade = document.getElementById("idadeInput").value;
+    var m = "";
+
+    idade == 0? m = "Tu não existe. " :
+    idade <= 12? m = "Você é criança." :
+    idade >= 12 && idade <= 17? m = "Você é adolescente. " :
+    idade >= 18 && idade <= 59? m = "Você é adulto. ":
+    idade > 60 && idade < 129? m = "Você é idoso. " : 
+    idade > 130? m = "Você é imortal.": m = "Erro";
+
+    document.getElementById('idade').innerHTML = m;
 }

@@ -108,6 +108,7 @@ nav {
     transition: 0.3s ease;    
     font-size: 20px;
     border: none;
+    cursor: pointer;
 }
 
 .change-collors button:hover{
@@ -223,8 +224,8 @@ nav {
     font-size: 16px;
     border: 1px solid #333;
     border-radius: 10px;
-    background-color: #333;
-    color: #e0e0e0;
+    background-color: #ffffff;
+    color: black;
     height: 40px;
 }
 
@@ -270,6 +271,32 @@ nav {
 }
 
 .resultado-dia {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.calcula-idade{
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+.calcula-idade h2{
+    color: white;
+}
+
+.idade-input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.resultado-idade{
     color: white;
     font-size: 18px;
     font-weight: bold;
