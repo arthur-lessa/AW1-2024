@@ -55,9 +55,9 @@ nav {
 }
 
 .nav-buttons{
-    display: flex;
-    justify-content: start;
-    width: 70%;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    width: 60%;
 }
 
 .nav-buttons a {
@@ -270,13 +270,12 @@ nav {
     margin-bottom: 20px;
 }
 
-.resultado-dia {
-    color: white;
+#dia {
+    margin-top: 20px;
     font-size: 18px;
     font-weight: bold;
     display: flex;
     justify-content: center;
-    margin-top: 20px;
 }
 
 .calcula-idade{
@@ -296,11 +295,10 @@ nav {
     margin-bottom: 20px;
 }
 
-.resultado-idade{
-    color: white;
+#idade{
+    margin-top: 20px;
     font-size: 18px;
     font-weight: bold;
     display: flex;
     justify-content: center;
-    margin-top: 20px;
 }
